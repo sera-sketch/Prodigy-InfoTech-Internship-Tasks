@@ -52,3 +52,4 @@ def delete_user(user_id: int):
             deleted_user = users.pop(index)
             return {"message": "User deleted successfully", "user": deleted_user}
     raise HTTPException(status_code=404, detail="User not found")
+
